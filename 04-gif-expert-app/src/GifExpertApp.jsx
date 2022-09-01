@@ -1,12 +1,19 @@
 import { useState } from 'react'
+import './styles.css'
 
 export const GifExpertApp = () => {
-	const [categories, setcategories] = useState(['One Punch', 'Dragon Ball'])
+	const [categories, setCategories] = useState(['One Punch', 'Dragon Ball'])
+
+	const onAddCategory = () => {
+		// setCategories(['Love'])
+		console.log(categories)
+	}
 
 	return (
 		<>
 			{/* Titulo */}
 			<div>GifExpertApp</div>
+			<button onClick={onAddCategory}>Add</button>
 
 			{/* Input */}
 
